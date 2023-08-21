@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('get_all_invoices', [InvoiceController::class, 'GetAllInvlices']);
+Route::get('search_invoices', [InvoiceController::class, 'search_invoices']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
